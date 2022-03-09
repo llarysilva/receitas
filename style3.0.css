@@ -10,11 +10,77 @@
 
 body{
   height: 100vh;
-  display: flex;
+
   align-items: center;
   justify-content: center;
   background: #f2f2f2;
 }
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgba(194, 63, 2, 0.637) ;
+    height: 80px;
+    width: 100%;
+    
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white ;
+    font-size: 17px;
+    border-radius: 3px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover {
+    background-color: #c24e00;
+    transition: all .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
 
 section{
   position: relative;  
@@ -37,12 +103,7 @@ section{
 }
 
 .card::before{
-  content: "";
-  position: absolute;
-  height: 40%;
-  width: 100%;
-  background: #7d2ae8;
-  border-radius: 20px 20px 0 0;
+  
 }
 
 .card .card-content{
@@ -70,22 +131,6 @@ section .card .image img{
   border: 3px solid #fff;
 }
 
-.card .media-icons{
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card .media-icons i{
-  color: #fff;
-  opacity: 0.6;
-  margin-top: 10px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
 
 .card .media-icons i:hover{
   opacity: 1;
