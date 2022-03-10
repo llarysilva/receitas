@@ -2,11 +2,77 @@
   
 
   main {
-    height: 90vh;
-    background: url(imagens/pexels-jose-francisco-fernandez-saura-802024.jpg);
-    background-position-x: center;
+    height: 100vh;
+    background-image: url(imagens/pexels-orione-conceição-8663203.jpg);
+    background-repeat: no-repeat;
+    
   }
-  
+  form { 
+    
+    background-color: white;
+    border-radius: 3em;
+    box-shadow: 2px 2px 2px 0px rgba(59, 58, 58, 0.644);
+    width: 100%;
+    margin: 5px;
+
+ }
+form input, form button {
+    font-size: 1.2em;
+    border-radius: 2em;
+    border: none;
+    padding: 0.6em;
+    outline: 0;
+    
+
+}
+
+.meio-principal {
+    display: flex;
+}
+.form-principal h1 {
+    color: #f0f2f3;
+    font-size: 2.4em;
+    text-align: center ;
+    font-weight: 200;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.centro {
+    background-color: hsl(131, 61%, 14%);
+    padding: 7px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.521) 1px 1px 1px 1px;
+}
+.btnn button {
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    background-color: #296312;
+    color: white;
+    padding: 10px;
+    margin: 7px;
+    
+}
+
+.btnn button:hover {
+    background-color: #036d0c;
+    cursor: pointer;
+}
+.titulo h1 {
+    padding: 20px;
+    font-size: 1.8em;
+    color: #144d74;
+    text-align: left;
+}
+
+   
+.form-principal {
+    padding: 200px 150px;
+    
+}
+
   .carousel-wrapper {
     height: 550px;
     position: relative;
@@ -45,6 +111,10 @@
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 12px;
+  }
+
+  .carousel-item a:hover {
+      background: none;
   }
   .arrow-prev {
     left: 30px;
