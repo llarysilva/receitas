@@ -9,7 +9,7 @@
 }
 
 nav {
-    background-color: rgba(194, 63, 2, 0.637) ;
+    background-color: rgba(6, 59, 1, 0.829) ;
     height: 80px;
     width: 100%;
     
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 a.active,a:hover {
-    background-color: #c24e00;
+    background-color: #01250c;
     transition: all .5s;
 }
 

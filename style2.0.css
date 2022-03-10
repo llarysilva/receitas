@@ -38,9 +38,7 @@
         display: block;
     }
     
-    nav {
-        padding: 10px;
-    }
+    
 
     label.logo {
         padding: 0 20px;
@@ -56,7 +54,7 @@
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: #b33900;
+        background-color: #002e13;
         top: 80px;
         left: -100%;
         transition: all .5s;
@@ -75,7 +73,7 @@
 
     a:hover,a.active {
         background: none; 
-        color: #682100;
+        color: #049e32;
     }
 
     #check:checked ~ ul {
@@ -107,4 +105,45 @@
         width:180px;
         font-size: 0.8rem;
     }
+
+    .carousel-wrapper {
+        height: 250px;
+        position: relative;
+        width: 95%;
+        display: block;
+        margin: 50px auto ;
+        border: 5px solid black;
+        border-radius: 10px;
+      }
+}
+
+@media (max-width:400px) and (min-width:320px){
+    .carousel-wrapper {
+        height: 240px;
+        position: relative;
+        width: 95%;
+        display: block;
+        margin: 50px auto ;
+        border: 5px solid black;
+        border-radius: 10px;
+      }
+
+      .Musica  {
+        background-color: rgb(4, 75, 4);
+        color: wheat;
+        padding: 7px;
+        font-size: 1em;
+        border-radius: 5px;
+        position: relative;
+        top:150px;
+        left: 50px;
+    }
+    .item-1 {
+        z-index: 2;
+        opacity: 1;
+        background: url('imagens/socadona.jpg');
+        background-size: cover;
+        background-position-x: center;
+        background-size: 140%;
+        
 }

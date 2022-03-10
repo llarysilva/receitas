@@ -1,211 +1,97 @@
-/* === Google Font Import - Poppins === */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+  
 
-body{
-  height: 100vh;
+  main {
+    height: 90vh;
+    background: url(imagens/pexels-jose-francisco-fernandez-saura-802024.jpg);
+    background-position-x: center;
+  }
+  
+  .carousel-wrapper {
+    height: 550px;
+    position: relative;
+    width: 95%;
+    display: block;
+    margin: 50px auto ;
+    border: 5px solid black;
+    border-radius: 10px;
+  }
+  
 
-  align-items: center;
-  justify-content: center;
-  background: #f2f2f2;
-}
 
-
-
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style-type: none;
-    box-sizing: border-box;
-}
-
-nav {
-    background-color: rgba(194, 63, 2, 0.637) ;
-    height: 80px;
-    width: 100%;
+  .Musica  {
+      background-color: rgb(4, 75, 4);
+      color: wheat;
+      padding: 10px;
+      font-size: 1.5em;
+      border-radius: 5px;
+      text-align: center;
+  }
+  .Musica:hover {
+      background-color: rgb(1, 37, 1);
+  }
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid rgb(6, 26, 1);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  
+  }
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('imagens/socadona.jpg');
+    background-size: cover;
+    background-position-y: center;
     
 }
+  .item-2 {
+    background: url('imagens/xama.jpg');
+    background-size: cover;
+    background-position-x: center;
 
-label.logo {
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
+  }
+  .item-3 {
+    background: url('imagens/malvada.jpg');
+    background-size: cover;
+    background-position-x: center;
 
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    color: white ;
-    font-size: 17px;
-    border-radius: 3px;
-    padding: 7px 13px;
-    text-transform: uppercase;
-}
-
-a.active,a:hover {
-    background-color: #c24e00;
-    transition: all .5s;
-}
-
-.checkbtn {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-
-
-section{
-  position: relative;  
-  height: 450px;
-  width: 1075px;
-  display: flex;
-  align-items: center;
-}
-
-.swiper{
-  width: 950px;
-}
-
-.card{
-  position: relative;
-  background: #fff;
-  border-radius: 20px;
-  margin: 20px 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.card::before{
+  }
   
-}
-
-.card .card-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  position: relative;
-  z-index: 100;
-}
-
-section .card .image{
-  height: 140px;
-  width: 140px;
-  border-radius: 50%;
-  padding: 3px;
-  background: #7d2ae8;
-}
-
-section .card .image img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff;
-}
-
-
-.card .media-icons i:hover{
-  opacity: 1;
-}
-
-.card .name-profession{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
-  color: ;
-} 
-
-.name-profession .name{
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.name-profession .profession{
-  font-size:15px;
-  font-weight: 500;
-}
-
-.card .rating{
-  display: flex;
-  align-items: center;
-  margin-top: 18px;
-}
-
-.card .rating i{
-  font-size: 18px;
-  margin: 0 2px;
-  color: #7d2ae8;
-}
-
-.card .button{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-.card .button button{
-  background: #7d2ae8;
-  outline: none;
-  border: none;
-  color: #fff;
-  padding: 8px 22px;
-  border-radius: 20px;
-  font-size: 14px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.button button:hover{
-  background: #6616d0;
-}
-
-.swiper-pagination{
-  position: absolute;
-}
-
-.swiper-pagination-bullet{
-  height: 7px;
-  width: 26px;
-  border-radius: 25px;
-  background: #7d2ae8;
-}
-
-.swiper-button-next, .swiper-button-prev{
-  opacity: 0.7;
-  color: #7d2ae8;
-  transition: all 0.3s ease;
-}
-.swiper-button-next:hover, .swiper-button-prev:hover{
-  opacity: 1;
-  color: #7d2ae8;
-}
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
