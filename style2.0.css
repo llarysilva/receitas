@@ -139,6 +139,25 @@
         border: 5px solid black;
         border-radius: 10px;
       }
+      .categorias a {
+        display:   flexbox;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.4em;
+        color: #1c7519;
+        transition: 0.3s all;
+        border-radius: 10px; 
+        padding: 2px;
+}
+
+           .categorias img  {
+           height: 120px;
+             width: 120px;
+            margin: 6px;
+            border-radius: 10px;
+            background-color: transparent;
+            border: solid 4px rgb(7, 68, 7);
+         }
 
       .Musica  {
         background-color: rgb(4, 75, 4);
@@ -187,6 +206,30 @@
         
     
     }
+
+    @media (max-width:400px) and (min-width:360px) {
+        .categorias a {
+            display: flexbox;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.4em;
+            color: #1c7519;
+            transition: 0.3s all;
+            border-radius: 10px; 
+            padding: 2px;
+    }
+    
+               .categorias img  {
+               height: 150px;
+                 width: 150px;
+                margin: 6px;
+                border-radius: 10px;
+                background-color: transparent;
+                border: solid 4px rgb(7, 68, 7);
+             }
+    }
+
+    
 
     .meio {
         width: 100%;

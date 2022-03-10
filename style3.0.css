@@ -165,3 +165,65 @@ form input, form button {
     z-index: 3;
     opacity: 1;
   } 
+  
+  .top10 h1{
+    color: rgb(61, 121, 13);
+    font-weight: 300;
+}
+.top10  ol {
+    color: rgb(75, 155, 11);
+    columns: 2;
+    border: solid 2px rgb(32, 110, 9);
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    list-style-position: inside;
+
+}
+
+.top10 {
+    margin-left: 10px;
+    padding: 10px;
+}
+ .top10  li, a{
+     color: rgb(43, 107, 13);
+     font-size: 1.2em;
+     text-decoration: none;
+     margin-left: 0px;
+     
+     
+ }
+ .top10 li:hover{
+     text-decoration: underline;
+ }    
+
+ .categorias img  {
+    height: 200px;
+            width: 200px;
+            margin: 6px;
+            border-radius: 10px;
+            background-color: transparent;
+            border: solid 4px rgb(7, 68, 7);
+         }
+         .categorias h1 {
+             color: rgba(47, 128, 9, 0.897);
+             font-weight: 100;
+         }
+         .categorias {
+             display: inline-block;
+             margin-left: 15px;
+         }
+         .categorias a {
+             display: inline-block;
+             text-decoration: none;
+             text-align: center;
+             font-size: 1.4em;
+             color: #1c7519;
+             transition: 0.3s all;
+             border-radius: 10px; 
+             padding: 2px;
+    }
+         .categorias a:hover {
+            transform: scale(1.1);
+ }
+
