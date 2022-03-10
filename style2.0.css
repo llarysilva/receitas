@@ -149,6 +149,43 @@
         border: solid 4px rgb(7, 68, 7);
         
      }
+     
+     .play a:hover {
+        background: none;
+   
+    }
+    .playlist {
+        width: 1280px;
+        margin: auto;
+    }
+   
+    .play img {
+        width: 95px;
+        height: 140px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .play img:hover {
+       filter: brightness(50%);
+    }
+   
+    .play p {
+        background-color: #036d0c;
+        width: 95px;
+        border-radius: 0px 0px 5px 5px;
+        padding: 5px;
+        position: relative;
+        bottom: 20px;
+        left: 5px;
+    }
+    .playlist h1 {
+        padding: 10px;
+    }
+   
+    .fleex {
+        display: flexbox;
+    }
+     
      .categorias2 p{
          font-size: 0.8em;
      }
@@ -215,6 +252,7 @@
         margin: 5px;
     
      }
+
      main {
          background-image: url(imagens/pexels-orione-conceição-8663203\ \(1\).jpg);
          background-position-x: center;
@@ -242,6 +280,44 @@
             border-radius: 10px; 
             padding: 2px;
     }
+
+    .play a:hover {
+        background: none;
+   
+    }
+    .playlist {
+        width: 1280px;
+        margin: auto;
+    }
+   
+    .play img {
+        width: 108px;
+        height: 140px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .play img:hover {
+       filter: brightness(50%);
+    }
+   
+    .play p {
+        background-color: #036d0c;
+        width: 108px;
+        border-radius: 0px 0px 5px 5px;
+        padding: 5px;
+        position: relative;
+        bottom: 20px;
+        left: 5px;
+    }
+    .playlist h1 {
+        padding: 10px;
+    }
+   
+    .fleex {
+        display: flexbox;
+    }
+
+
     .categorias2 img  {
         height: 130px;
         width: 130px;
@@ -325,4 +401,70 @@
     }
     
     
+}
+
+@media (max-width:500px) and (min-width:400px) {
+    .play a:hover {
+        background: none;
+   
+    }
+    .playlist {
+        width: 1280px;
+        margin: auto;
+    }
+   
+    .play img {
+        width: 125px;
+        height: 140px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .play img:hover {
+       filter: brightness(50%);
+    }
+   
+    .play p {
+        background-color: #036d0c;
+        width: 125px;
+        border-radius: 0px 0px 5px 5px;
+        padding: 5px;
+        position: relative;
+        bottom: 20px;
+        left: 5px;
+    }
+    .playlist h1 {
+        padding: 10px;
+    }
+   
+    .fleex {
+        display: flexbox;
+    }
+
+    .categorias2 img  {
+        height: 150px;
+        width: 150px;
+        margin: 15px;
+        border-radius: 100px;
+        background-color: transparent;
+        border: solid 4px rgb(7, 68, 7);
+        
+     }
+     .categorias2 a {
+        display: flexbox;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.4em;
+        color: #0f690c;
+        transition: 0.3s all;
+        border-radius: 10px; 
+        padding: 2px;
+   }
+               .categorias img  {
+               height: 160px;
+                 width: 160px;
+                margin: 6px;
+                border-radius: 10px;
+                background-color: transparent;
+                border: solid 4px rgb(7, 68, 7);
+        
 }

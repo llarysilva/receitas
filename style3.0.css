@@ -259,3 +259,38 @@ form input, form button {
 
  }
 
+ .play a:hover {
+     background: none;
+
+ }
+ .playlist {
+     width: 1280px;
+     margin: auto;
+ }
+
+ .play img {
+     width: 400px;
+     height: 540px;
+     margin: 12px;
+     border-radius: 5px;
+ }
+ .play img:hover {
+    filter: brightness(50%);
+ }
+
+ .play p {
+     background-color: #036d0c;
+     width: 400px;
+     border-radius: 0px 0px 5px 5px;
+     padding: 20px;
+     position: relative;
+     bottom: 60px;
+     left: 12px;
+ }
+
+ .fleex {
+     display: flex;
+ }
+
+
+
